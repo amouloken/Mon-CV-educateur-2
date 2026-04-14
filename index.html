@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV - Andre Eric Mouloken</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy:#0f3b63;
+      --navy-dark:#0a2f52;
+      --navy-mid:#1f4f7f;
+      --cream:#f7f1e8;
+      --cream-2:#fbf7f1;
+      --gold:#d8a15b;
+      --gold-dark:#b67c38;
+      --text:#17324d;
+      --muted:#5d7188;
+      --line:#e2c4a0;
+      --white:#ffffff;
+      --shadow:0 10px 25px rgba(9,37,66,.12);
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #e9eef5;
+      font-family: 'Open Sans', Arial, sans-serif;
+      color: var(--text);
+      display: flex;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .page {
+      width: 815px;
+      min-height: 1150px;
+      background: var(--cream-2);
+      position: relative;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+
+    /* decorative waves */
+    .page::before,
+    .page::after {
+      content: "";
+      position: absolute;
+      left: -80px;
+      width: 320px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #0c355c 0%, #194b79 100%);
+      z-index: 0;
+    }
+
+    .page::before {
+      top: -140px;
+      height: 520px;
+      transform: rotate(-12deg);
+    }
+
+    .page::after {
+      bottom: -210px;
+      height: 520px;
+      transform: rotate(10deg);
+    }
+
+    .wave-top,
+    .wave-bottom {
+      position: absolute;
+      left: 0;
